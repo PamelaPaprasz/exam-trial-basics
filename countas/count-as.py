@@ -2,7 +2,7 @@ def count_as(my_file):
     try:
         my_file = open(my_file, 'r')
         data = my_file.readline()
-        data= data.lower()
+        data = data.lower()
         my_file.close()
         
         return data.count('a')
