@@ -1,14 +1,11 @@
 def count_as(my_file):
     try:
         my_file = open(my_file, 'r')
-        
-        number_of_a = 0
-        
-        for i in my_file:
-            if i == 'a':
-                number_of_a += 1
-        return number_of_a
+        data = my_file.readline()
+        data= data.lower()
         my_file.close()
+        
+        return data.count('a')
         
     except FileNotFoundError:
         return 0
