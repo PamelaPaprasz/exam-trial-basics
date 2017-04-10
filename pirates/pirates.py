@@ -12,7 +12,7 @@ def listed_pirates(pirate):
     wood_legged_and_more_then_15_gold= []
     
     for i in pirate:
-        if i['has_wooden_leg'] == True or i['gold'] > 15:
+        if i['has_wooden_leg'] == True and i['gold'] > 15:
             wood_legged_and_more_then_15_gold.append(i['Name'])
             
     return wood_legged_and_more_then_15_gold
