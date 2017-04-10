@@ -33,3 +33,7 @@ The application is accepted if:
 
 ### How can you generate a random number? [2p]
 #### Your answer: [add your answer here]
+
+import random
+
+print(random.randint(0,100))
